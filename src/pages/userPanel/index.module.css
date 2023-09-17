@@ -1,0 +1,80 @@
+.userPanel {
+    background: linear-gradient(to bottom, #222831, #9c27b0);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding-top: 2rem;
+    min-height: 100vh;
+
+}
+
+.sidebar {
+    width: 100%;
+    background-color: #222831;
+    border-radius: 1rem;
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 2rem;
+
+
+}
+
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.sidebar nav a.active {
+    color: #ffbe33;
+}
+
+.sidebar nav a {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.sidebar nav p {
+    color: #ff3333;
+    cursor: pointer;
+}
+
+.main{
+    width: 100%;
+}
+
+
+
+@media (min-width:350px) {
+    .sidebar {
+        width: 300px !important;
+    }
+}
+
+@media (min-width:650px) {
+    .sidebar {
+        width: 330px !important;
+    }
+}
+
+@media (min-width:992px) {
+    .wrapper {
+        flex-direction: row;
+    }
+
+    .sidebar {
+        align-self: flex-start;
+    }
+
+    .main{
+        width: 66%;
+    }
+}

@@ -1,0 +1,155 @@
+.sidebar {
+    color: #fff;
+    width: 100%;
+
+}
+
+.sidebar svg {
+    font-size: 1.35rem !important;
+}
+
+.logoWrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.25rem 0;
+
+}
+
+.logoWrapper div:nth-child(1) {
+    width: 2rem;
+}
+
+.logoWrapper img {
+    width: 100%;
+}
+
+.title {
+    display: none;
+}
+
+.logoWrapper div:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.line {
+    height: 1px;
+    background-color: #e2e8f08f;
+    border-radius: 2rem;
+    margin-bottom: 1.5rem;
+    display: none;
+}
+
+
+.pMenu {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem
+}
+
+
+.pMenu li {
+    width: 100%;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    font-size: 0.9rem;
+
+}
+
+
+html[dir="rtl"].pMenu li {
+    width: 100%;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+
+
+.pMenu a {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.2rem;
+    color: #fff;
+    padding: 16px 16px;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    transition: all 0.2s linear;
+    width: 100%;
+}
+
+.pMenu li:last-child p {
+    color: #ff3333;
+}
+
+.pMenu li:last-child p {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.2rem;
+    padding: 16px 16px;
+    width: 100%;
+    cursor: pointer;
+}
+
+
+
+html[dir="rtl"] .pMenu a {
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+@media (min-width:768px) {
+
+    .logoWrapper div:nth-child(2) {
+        display: none;
+    }
+
+    .pMenu span {
+        display: none;
+    }
+
+    .line {
+        display: block;
+        width: 80%;
+    }
+
+    .pMenu a:hover:not(.active) {
+        background-color: var(--hover-bg-color);
+    }
+
+    .pMenu .active {
+        width: 100%;
+        background-color: var(--app-bg-color);
+        color: var(--text-color);
+    }
+}
+
+
+@media (min-width:992px) {
+    .title {
+        display: flex;
+    }
+
+    .pMenu span {
+        display: flex;
+    }
+
+    .logoWrapper div:nth-child(1) a {
+        color: #fff;
+        display: flex;
+        justify-self: center;
+        align-items: center;
+        gap: 1.2rem;
+    }
+
+
+}

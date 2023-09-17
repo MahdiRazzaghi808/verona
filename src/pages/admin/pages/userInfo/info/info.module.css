@@ -1,0 +1,106 @@
+.wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.profile {
+
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+
+}
+
+.profile img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    border: 5px solid #ffbe33 !important;
+
+}
+
+.inputs {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem 0;
+}
+
+
+
+.form {
+    background-color: var(--section-bg-color);
+      width: 100%;
+    margin: 0 auto;
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex !important;
+}
+
+.form label{
+    color: var(--text-color) !important;
+}
+
+.rol {
+    display: flex;
+    flex-direction: column;
+    gap: 0.65rem;
+    margin-top: 0.5rem;
+}
+
+.rol p {
+    color: var(--text-color);
+    font-size: 0.90rem;
+}
+
+.date {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.date span {
+    color: #ffbe33;
+    margin-top: 0.5rem;
+    font-size: 1.10rem;
+}
+
+.profileBtn {
+    padding: 0.5rem;
+    background-color: #ffbe33;
+    color: var(--text-color);
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.buttonWrapper{
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+    justify-content: space-between;
+    margin-top: 2.5rem;
+}
+
+.buttonWrapper button{
+    padding: 0.75rem 1.75rem;
+    border-radius: 0.5rem;
+}
+
+@media (min-width:456px){
+    .buttonWrapper{
+        flex-direction: row;
+        align-items: center;
+    }
+}
+@media (min-width:800px){
+    .inputs {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem 3rem;
+    }
+}

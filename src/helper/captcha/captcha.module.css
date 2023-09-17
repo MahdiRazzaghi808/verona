@@ -1,0 +1,35 @@
+.wrapper {
+    display: flex;
+    /* flex-direction: row-reverse; */
+    justify-content: center;
+    align-items: center;
+    gap: 2rem
+}
+
+.captchaId {
+    width: 100%;
+    background-color: #222831;
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
+audio {
+    display: none;
+}
+
+.icons {
+    margin-top: 0.75rem;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+@media (max-width:456px) {
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

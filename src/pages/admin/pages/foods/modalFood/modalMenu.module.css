@@ -1,0 +1,20 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 3rem;
+}
+
+.wrapper button {
+    padding: 1rem;
+}
+
+.wrapper button.active {
+    background-color: var(--main-color-success) !important;
+}
+
+.wrapper button.deActive {
+    opacity: 0.5;
+    cursor: not-allowed;
+    
+}

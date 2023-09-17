@@ -1,0 +1,72 @@
+.discount {
+    height: 75vh;
+    width: 100%;
+    background-color: #222831;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    padding: 2rem;
+    color: #fff;
+}
+
+
+
+
+.discountsWrapper {
+    margin: 3.5rem 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1.5rem;
+}
+
+.discountItem {
+    background-color: #293145;
+    padding: 1.5rem;
+    border-radius: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.discountItem button {
+    color: #010101
+}
+
+.discountDic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem
+}
+
+.discountDic p:first-child {
+    background-color: #222831;
+    padding: 0.25rem;
+    border-radius: 0.2rem;
+    width: fit-content;
+}
+
+.discountDic p:last-child {
+    font-size: 0.75rem;
+}
+
+.main {
+    margin: 1.5rem 0;
+    color: #ff3333;
+
+}
+
+@media (min-width:430px) {
+    .discountItem {
+        flex-direction: row-reverse;
+
+    }
+
+    .discountDic {
+        align-items: flex-start;
+    }
+
+}
+

@@ -1,0 +1,45 @@
+.wrapper {
+    width: 100%;
+
+    /* flex-direction: column; */
+    margin-bottom: 2rem;
+}
+
+.profile {
+
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+
+
+}
+
+.profile img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    border: 5px solid #ffbe33 !important;
+
+}
+
+.form {
+    background-color: #222831;
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex !important;
+}
+
+.div span {
+    color: #fff !important;
+}
+
+.profileBtn {
+    padding: 0.5rem;
+    background-color: #ffbe33;
+    color: #fff;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}

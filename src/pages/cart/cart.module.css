@@ -1,0 +1,141 @@
+.cart {
+background: linear-gradient(to bottom, #222831, #9c27b0);
+
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 2rem;
+    padding-top: 2rem;
+    min-height: 100vh;
+
+}
+
+.cartBoxWrapper {
+    width: 100%;
+
+}
+
+
+
+
+
+/* //////////////////////////////////////// */
+/* cartBox */
+/* /////////////////////////////////////// */
+.clearBtn {
+    width: fit-content;
+    background-color: #ff3333;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0 auto;
+}
+
+.clearBtn:hover {
+    background-color: #ff3333;
+
+}
+
+
+.cartEmpty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    color: #fff;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+}
+
+.cartEmpty a {
+    color: #fff;
+    background-color: #20456b !important;
+}
+
+.cartBox {
+    margin: 2rem 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+/* //////////////////////////////////////// */
+/* sidebar */
+/* /////////////////////////////////////// */
+.sidebar {
+    width: 100%;
+    background-color: #222831;
+    padding: 2rem;
+    color: #fff;
+    border-radius: 1rem;
+    align-self: center;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+
+}
+
+.sidebarItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+}
+
+.sidebarItem p:first-child{
+    color: #ffbe33;
+}
+
+.sidebar div:nth-child(2) {
+    border-bottom: 1px solid #ffffff38;
+    border-top: 1px solid #ffffff38;
+    padding: 1.5rem 0;
+}
+
+
+.post {
+    border-bottom: 1px solid #ffffff38;
+    padding-bottom: 1.5rem;
+}
+
+
+/* //////////////////////////////////////// */
+/* responsive */
+/* /////////////////////////////////////// */
+
+
+
+
+
+
+@media (min-width:380px) {
+    .sidebarItem {
+        flex-direction: row;
+        gap: 0;
+    }
+}
+
+@media (min-width:650px) {
+    .sidebar {
+        width: 500px;
+    }
+}
+
+@media (min-width:992px) {
+    .wrapper {
+        flex-direction: row;
+    }
+
+    .sidebar {
+        align-self: flex-start;
+        margin-top: 1.75rem;
+    }
+}

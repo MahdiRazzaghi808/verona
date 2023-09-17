@@ -1,0 +1,41 @@
+.wrapper {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: #1E1E2B;
+    color: #fff;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem
+}
+
+.wrapper>* {
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper img {
+    width: 5rem;
+    height: 5rem;
+    margin: 0 auto;
+}
+
+
+.priceCartWrapper {
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width:768px) {
+    .wrapper {
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+    
+
+
+    .priceCartWrapper {
+        align-items: flex-end;
+    }
+}

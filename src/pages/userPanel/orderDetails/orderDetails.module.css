@@ -1,0 +1,52 @@
+.orderDetails {
+    min-height: 80vh;
+    width: 100%;
+    background-color: #222831;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    padding: 2rem;
+    color: #fff;
+
+
+}
+
+.cartTitle {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+
+.cartTitle span{
+    color: #fff !important;
+    font-size: 1.5rem !important;
+    font-weight: bold !important;
+
+}
+
+.foods {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem
+}
+
+.headerItem {
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+}
+
+.div span{
+color: #fff !important;
+}
+
+@media (min-width:678px) {
+    .headerItem {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width:992px) {
+    .headerItem {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

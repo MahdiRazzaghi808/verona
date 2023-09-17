@@ -1,0 +1,62 @@
+.wrapper {
+    padding: 0.25rem 0
+}
+
+.wrapper h3 {
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+.step {
+    background-color: var(--section-bg-color);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.step h4 {
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
+    text-align: center;
+    color: var(--text-color);
+
+}
+
+.date {
+    background-color: var(--section-bg-color);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+
+}
+
+.date h4 {
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
+    text-align: center;
+    color: var(--text-color);
+
+}
+
+.date div{
+margin: 0 auto;
+}
+
+
+.lineChart {
+    margin: 3rem 0;
+    background-color: var(--section-bg-color);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+.lineChart h4 {
+    margin-bottom: 2rem;
+    font-size: 1.25rem;
+    text-align: center;
+    color: var(--text-color);
+
+}
+
+.lineChart div {
+    direction: ltr !important;
+}

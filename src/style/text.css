@@ -1,0 +1,79 @@
+.loginLogo p {
+    color: #fff;
+    font-family: "dancing-Script";
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.loginLogo p span {
+    display: inline-block;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 500;
+    -webkit-font-smoothing: antialiased;
+}
+
+.loginLogo p span::before,
+.loginLogo p span::after {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: -1px;
+    transform-origin: left top;
+    transition: all ease-out 0.3s;
+    content: attr(data-text);
+}
+
+.loginLogo p span::before {
+    z-index: 1;
+    color: rgba(0, 0, 0, 0.2);
+    transform: scale(1.1, 1) skew(0deg, 20deg);
+}
+
+.loginLogo p span::after {
+    z-index: 2;
+    color: #ffbe33;
+    text-shadow: -1px 0 1px #ffbe33, 1px 0 1px rgba(0, 0, 0, 0.8);
+    transform: rotateY(-40deg);
+}
+
+.loginLogo p span:hover::before {
+    transform: scale(1.1, 1) skew(0deg, 5deg);
+}
+
+.loginLogo p span:hover::after {
+    transform: rotateY(-10deg);
+}
+
+.loginLogo p span+span {
+    margin-left: 0.3em;
+}
+
+@media (min-width: 20em) {
+    .loginLogo p {
+        font-size: 1.5em;
+    }
+
+    .loginLogo p span::before,
+    .loginLogo p span::after {
+        display: block;
+    }
+}
+
+@media (min-width: 30em) {
+    .loginLogo p {
+        font-size: 2em;
+    }
+}
+
+@media (min-width: 40em) {
+    .loginLogo p {
+        font-size: 3em;
+    }
+}
+
+@media (min-width: 60em) {
+    .loginLogo p {
+        font-size: 4em;
+    }
+}

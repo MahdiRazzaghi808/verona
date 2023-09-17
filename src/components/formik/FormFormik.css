@@ -1,0 +1,23 @@
+.inputWrapper {
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  gap: 0.5rem;
+}
+
+.inputWrapper label {
+  color: #929292 !important;
+  margin-left: 0.25rem !important;
+  font-size: 0.95rem !important;
+}
+
+.inputWrapper input {
+  width: 100% !important;
+}
+
+.inputWrapper p {
+  color: rgba(173, 26, 26, 0.847) !important;
+  margin-left: 0.5rem !important;
+  font-size: 0.8rem !important;
+}

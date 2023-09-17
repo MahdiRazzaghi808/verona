@@ -1,0 +1,116 @@
+.header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+    color: var(--text-color);
+}
+
+.header svg {
+    font-size: 1.35rem;
+}
+
+.headerRight {
+    display: none;
+}
+
+.headerRight p {
+    color: #3160d8;
+}
+
+.headerRight span {
+    color: #718096;
+
+}
+
+.line {
+    height: 1px;
+    background-color: #a5a7aa8f;
+    border-radius: 2rem;
+    margin: 1.95rem 0;
+}
+
+.icons svg{
+    font-size: 1rem;
+}
+
+
+
+
+/*             
+=======================
+left
+=======================
+*/
+
+
+.checkBox[aria-checked="true"] {
+    background-color: #0f131c !important;
+
+}
+
+.moon {
+    color: #f9d21f !important;
+    margin-top: 0.15rem;
+}
+
+.checkBox {
+    background-color: #3160d8 !important;
+    color: #010101 !important;
+}
+
+.sun {
+    color: #fabe08 !important;
+    margin-top: -0.1rem;
+
+}
+
+/*             
+=======================
+left
+=======================
+*/
+.headerLeft {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.headerLeft div:first-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem
+}
+
+.headerLeft div:first-child * {
+    cursor: pointer;
+}
+
+.avatar {
+    width: 2rem;
+    height: 2rem;
+}
+
+.avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+
+@media (min-width: 768px) {
+    .headerRight {
+        display: flex;
+    }
+
+    .headerLeft {
+        width: auto;
+        justify-content: flex-end;
+        gap: 1rem;
+    }
+}

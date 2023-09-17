@@ -1,0 +1,45 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    /* margin-bottom: 2.5rem; */
+}
+
+.header button {
+    align-self: flex-end;
+    background-color: var(--app-bg-color);
+    color: var(--text-color);
+}
+
+.header button:hover {
+    background-color: var(--app-bg-color);
+    color: var(--text-color);
+}
+
+.header div>div {
+    background-color: var(--app-bg-color);
+}
+
+.secondHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.countWrapper {
+    direction: ltr;
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background-color: #ffbd39;
+    color: #fff;
+    padding: 0.5rem 0.85rem !important;
+    border-radius: 0.5rem !important;
+    height: 2.45rem !important;
+}
+
+.countWrapper svg {
+    font-size: 1rem;
+    cursor: pointer;
+}

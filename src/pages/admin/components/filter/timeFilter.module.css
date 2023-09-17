@@ -1,0 +1,23 @@
+.scroll-container {
+    max-height: 200px; 
+    overflow-y: auto; 
+  }
+  
+  .wrapper {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+    width: 100%;
+    overflow-x: auto; 
+    white-space: nowrap; 
+    padding: 0.5rem;
+}
+
+.wrapper div {
+    padding: 0.35rem 0.75rem;
+    border-radius: 0.25rem;
+    background-color: var(--section-bg-color);
+    display: inline-block; 
+    cursor: pointer;
+    color: var(--text-color);
+}

@@ -1,0 +1,363 @@
+:root {
+    --text-color: #010101;
+    --main-bg-color: #1c3faa;
+    --app-bg-color: #f1f5f8;
+    --section-bg-color: #fff;
+    --hover-bg-color: #1a389f;
+    --main-color: #ffbe33;
+    --main-color-error: #ff3333;
+    --main-color-success: #41ff33;
+    --main-color-hover: #e69c00;
+    --bg-color: #222831;
+
+    --th-bg: #4a4a4a;
+    --tr-bg-even: #ffffff;
+    --tr-color-even: #333333;
+    --tr-bg-odd: #c1c1c1c1;
+    --tr-color-odd: #333333;
+
+    --bg-order: #fff;
+
+}
+
+:root.dark-mood {
+    --text-color: #fff;
+    --main-bg-color: #232a3b;
+    --app-bg-color: #293145;
+    --section-bg-color: #313a55;
+    --hover-bg-color: #1e2533;
+    --main-color: #ffbe33;
+    --main-color-error: #ff3333;
+    --main-color-success: #41ff33;
+
+    --main-color-hover: #e69c00;
+    --bg-color: #222831;
+
+
+    --th-bg: #e69c00;
+    --tr-bg-even: #fff;
+    --tr-color-even: #000;
+    --tr-bg-odd: #4e6f91;
+    --tr-color-odd: #fff;
+
+    --bg-order: #222831;
+}
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    overflow-x: hidden;
+
+}
+
+/* 
+////////////////////////////////////////////////////////////////////
+helper 
+////////////////////////////////////////////////////////////////////
+*/
+.pre1 {
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+
+
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+input[data-autocompleted] {
+    background-color: transparent !important;
+}
+
+/* 
+////////////////////////////////////////////////////////////////////
+swal 
+////////////////////////////////////////////////////////////////////
+*/
+
+.iziToast-message {
+    font-family: yekan sans-serif !important;
+}
+
+.swal2-confirm:focus,
+.swal2-cancel:focus,
+.swal2-close:focus {
+    box-shadow: none !important;
+}
+
+.swal2-confirm {
+    background-color: #d49605 !important;
+}
+
+.swal2-success-circular-line-left,
+.swal2-success-fix,
+.swal2-success-circular-line-right {
+    display: none !important;
+}
+
+/* div:where(.swal2-container) .swal2-select,
+div:where(.swal2-container) div:where(.swal2-validation-message),
+div:where(.swal2-container).swal2-center>.swal2-popup {
+    font-family: sans-serif !important;
+    background: #222831 !important;
+    color: #fff !important;
+
+} */
+.darkSwal {
+    font-family: sans-serif !important;
+    background: #222831 !important;
+    color: #fff !important;
+}
+
+.lightSwal {
+    background-color: #dee6ec !important;
+    color: #333333;
+}
+
+/* 
+////////////////////////////////////////////////////////////////////
+ant js 
+////////////////////////////////////////////////////////////////////
+*/
+
+
+.ant-pagination .ant-pagination-item a {
+    color: #fff !important;
+}
+
+.ant-pagination .ant-pagination-item-active {
+    background-color: #ffbe33 !important;
+    border: none !important;
+}
+
+
+
+.ant-collapse-header {
+    display: flex !important;
+    align-items: center !important;
+    background-color: #fff !important;
+}
+
+.ant-collapse {
+    overflow: hidden !important;
+    background-color: #fff !important;
+
+}
+
+.ant-row {
+    flex-direction: column !important;
+}
+
+.ant-form-item .ant-form-item-label {
+    text-align: start !important;
+}
+
+
+
+
+.ant-paginatio .ant-pagination-item-active a:hover {
+    color: #fff !important;
+}
+
+
+/* .ant-divider-horizontal.ant-divider-with-text {
+    color: #fff !important;
+} */
+
+.ant-divider-horizontal.ant-divider-with-text::before,
+.ant-divider-horizontal.ant-divider-with-text::after {
+    border-block-start-color: #ffbe33 !important;
+    border-radius: 15rem !important;
+
+}
+
+
+.ant-collapse-large>.ant-collapse-item>.ant-collapse-content>.ant-collapse-content-box {
+    padding: 0 !important;
+}
+
+.ant-collapse>.ant-collapse-item>.ant-collapse-header {
+    display: flex !important;
+    align-items: center !important;
+}
+
+
+.ant-row {
+    display: block !important;
+
+}
+
+
+/* 
+////////////////////////////////////////////////////////////////////
+ant Table  user panel
+////////////////////////////////////////////////////////////////////
+*/
+th {
+    background-color: #ffae00 !important;
+    color: #fff !important;
+    white-space: nowrap;
+    text-align: center !important;
+}
+
+
+
+tr:nth-child(even) {
+    background-color: #fff;
+
+}
+
+tr:nth-child(odd) {
+    background-color: #4e6f91;
+    color: #fff;
+
+}
+
+tr:nth-child(odd) a {
+    color: #fff;
+
+}
+
+tr:nth-child(even) a {
+    color: #000;
+
+}
+
+td {
+    transition: all 0.3s linear !important;
+    white-space: nowrap;
+
+
+}
+
+td * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+tr:hover td {
+    background-color: transparent !important;
+}
+
+.ant-table-cell {
+    width: 200px;
+}
+
+/*  
+////////////////////////////////////////////////////////////////////
+producer Table 
+////////////////////////////////////////////////////////////////////
+*/
+
+.producerTable {
+    margin-top: 1rem !important;
+}
+
+.producerTable th {
+    background-color: var(--th-bg) !important;
+    color: #fff !important;
+}
+
+/* .producerTable th svg {
+    color: #ffffffc3 !important;
+}
+
+.ant-table-wrapper .ant-table-filter-trigger.active {
+    color: #0074d9 !important;
+} */
+
+.producerTable tr:nth-child(even) {
+    background-color: var(--tr-bg-even);
+    color: var(--tr-color-even);
+}
+
+
+.producerTable tr:nth-child(even) a {
+    color: var(--tr-color-even);
+
+}
+
+.producerTable tr:nth-child(odd) {
+    background-color: var(--tr-bg-odd);
+    color: var(--tr-color-odd);
+
+}
+
+.producerTable tr:nth-child(odd) a {
+    color: var(--tr-color-odd);
+
+}
+
+
+.date-bg {
+    background-color: var(--app-bg-color) !important;
+    color: var(--text-color) !important;
+}
+
+.date-bg .sd {
+    color: var(--text-color) !important;
+}
+
+.date-bg .rmdp-header-values {
+    color: var(--text-color) !important;
+}
+
+.rmdp-day.rmdp-selected span:not(.highlight) {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    color: var(--text-color) !important;
+
+}
+
+.date-bg .sd:hover {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    color: var(--text-color) !important;
+
+}
+
+span .sd:hover {
+    background-color: transparent !important;
+}
+
+
+
+.rmdp-day.rmdp-today span {
+    background-color: #0074d9 !important;
+    box-shadow: 0 0 3px #8798ad !important;
+    color: var(--text-color) !important;
+
+}
+
+.rmdp-day.rmdp-today span:hover {
+    background-color: #0074d9 !important;
+    box-shadow: 0 0 3px #8798ad !important
+}
+
+.ant-table-wrapper td.ant-table-column-sort {
+    background-color: transparent !important;
+}
+
+/*  
+////////////////////////////////////////////////////////////////////
+responsive 
+////////////////////////////////////////////////////////////////////
+*/
+
+@media (max-width:768px) {
+    * {
+        cursor: default !important;
+    }
+}

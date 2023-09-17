@@ -1,0 +1,11 @@
+.wrapper {
+    background-color: var(--section-bg-color);
+    color: var(--text-color);
+    border-radius: 0.5rem;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:2rem ;
+}

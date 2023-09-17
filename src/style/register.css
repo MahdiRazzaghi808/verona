@@ -1,0 +1,106 @@
+.wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 5rem 0;
+    background: url(../assets/image/register/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loginLogo {
+    margin-bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    direction: ltr;
+}
+
+.loginLogo a {
+    font-size: 1.75rem;
+    margin: 0 auto;
+}
+
+.loginLogo span {
+    font-family: "dancing-Script" !important;
+    font-weight: bold !important;
+}
+
+
+
+.register__title {
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    font-family: "dancing-Script";
+}
+
+.newUserAlert {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    font-family: "dancing-Script";
+}
+
+.formWrapper {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    background-color: #222831cd;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.buttonsWrapper {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.buttonsWrapper a {
+    color: #fff;
+    transition: all 0.25s linear;
+}
+
+
+.buttonsWrapper a:hover {
+    color: #ffbe33;
+}
+
+
+
+
+@media (min-width:768px) {
+    .formWrapper {
+        width: 80%;
+    }
+}
+
+@media (min-width:992px) {
+    .formWrapper {
+        width: 60%;
+    }
+}
+
+@media (min-width:1200px) {
+    .formWrapper {
+        width: 50%;
+    }
+}

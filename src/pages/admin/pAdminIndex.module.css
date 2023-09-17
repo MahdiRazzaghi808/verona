@@ -1,0 +1,72 @@
+
+.pAdmin{
+    background-color: var(--main-bg-color);
+}
+
+
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.sidebar {
+    width: 100%;
+}
+
+.main {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 2rem;
+    padding: 1rem 1rem;
+    background-color: var(--app-bg-color);
+}
+
+
+
+
+/* container */
+.container {
+    padding: 0 12px;
+}
+
+
+@media (min-width:637px) {
+    .container {
+        padding: 0 32px;
+    }
+
+}
+
+@media (min-width:768px) {
+    .container {
+        padding: 20px 32px;
+    }
+
+    .wrapper {
+        flex-direction: row;
+    }
+
+    .sidebar {
+        width: 75px;
+    }
+
+
+}
+
+@media (min-width: 992px) {
+    .sidebar {
+        width: 200px;
+    }
+
+}
+
+
+/* remove blue hover  in mobile size  */
+@media screen and (max-width:992px) {
+    * {
+        cursor: default;
+    }
+
+}

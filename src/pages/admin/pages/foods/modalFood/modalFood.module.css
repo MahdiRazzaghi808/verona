@@ -1,0 +1,131 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 2rem;
+}
+
+.imageWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.imageWrapper img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 0.5rem;
+}
+
+.imageWrapper svg {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.tabWrapper {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.tabWrapper h3 {
+    margin-bottom: 0.5rem;
+}
+
+.dicWrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+
+.category {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    margin: 1.25rem 0;
+}
+
+.price {
+    width: 100%;
+}
+
+.price h3 {
+    margin-bottom: 1.5rem;
+}
+
+.priceWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+}
+
+.inputs p {
+    font-size: 0.85rem;
+}
+
+
+.firstRow {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.secondRow {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+        justify-content: center;
+
+    width: 100%;
+}
+
+
+.alertInfo {
+    margin-top: 3rem;
+}
+
+.alertInfo div {
+    display: flex;
+    gap: 0.5rem
+}
+
+.alertInfo .error {
+    color: red;
+}
+
+.alertInfo .ok {
+    color: green;
+}
+
+.alertInfo svg {
+    font-size: 1.5rem;
+}
+
+@media (min-width:567px) {
+    /* .priceWrapper {
+        flex-direction: row;
+        gap: 1rem;
+        align-items: center;
+    } */
+
+}

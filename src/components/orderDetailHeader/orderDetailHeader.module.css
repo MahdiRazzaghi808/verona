@@ -1,0 +1,20 @@
+.item {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: #1a2133;
+    color: #fff;
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+
+}
+
+.item p:first-child {
+    color: #ffbe33;
+}
+
+@media (min-width:678px) {
+    .item {
+        align-items: flex-start;
+    }
+}

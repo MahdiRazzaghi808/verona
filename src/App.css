@@ -1,0 +1,244 @@
+@font-face {
+    font-family: yekan;
+    src: url(./assets/fonts/Yekan.ttf);
+}
+
+html[dir="rtl"] * {
+    font-family: yekan, sans-serif !important;
+}
+
+.foodTitleWrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.pAdminWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.pAdminWrapper h2 {
+    color: var(--text-color);
+}
+
+
+.buttonWrapper svg {
+    font-size: 1.5rem;
+}
+
+.tic {
+    color: #00b700;
+}
+
+
+
+
+
+
+.profile img {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+
+}
+
+td * {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.buttonWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pBtn,
+.btn-cancel {
+    border: none;
+    outline: none;
+    background-color: var(--app-bg-color);
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    font-weight: 400;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.pBtn-active {
+    background-color: var(--main-color-success) !important;
+    color: #010101 !important;
+}
+
+.btn-cancel {
+    background-color: var(--main-color-error);
+
+}
+
+.languageBtn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    margin: 2rem 0;
+
+}
+
+.cartShowWrapper {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.languageBtn button {
+    border: none;
+    outline: none;
+    background-color: var(--bg-order);
+    color: var(--text-color);
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    width: 100%;
+}
+
+.languageBtn button.active {
+    background-color: var(--main-color-success);
+}
+
+/*  */
+.statusFlag {
+    position: relative;
+    color: var(--main-color-error);
+
+}
+
+.statusFlag::before {
+    content: "";
+    position: absolute;
+    top: 42%;
+    left: -0.5rem;
+    width: 0.35rem;
+    height: 0.35rem;
+    background-color: var(--main-color-error);
+    border-radius: 50%;
+}
+
+.statusFlag.active {
+    color: #00b700;
+}
+
+.statusFlag.active::before {
+    background-color: #00b700;
+}
+
+html[dir="rtl"] .statusFlag::before {
+    right: -0.5rem;
+
+}
+
+/*  */
+.offerActive {
+    color: #fff;
+    background-color: rgb(0, 183, 0);
+    padding: 0.2rem;
+    border-radius: 0.3rem;
+}
+
+/*  */
+.foodInfo {
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--main-bg-color);
+}
+
+
+.filterWrapperFoods {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/* 
+
+
+
+
+*/
+
+.custom-swal-container {
+    width: auto !important;
+    max-width: none !important;
+}
+
+.custom-swal-popup {
+    width: auto !important;
+    max-width: none !important;
+    margin: 10px;
+}
+
+.swal-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.swal2-input75 {
+    width: 200px;
+    margin-bottom: 10px;
+    color: var(--text-color);
+    border:1px solid  var(--text-color);
+}
+
+.swal2-input75::placeholder {
+
+    color: #929191;
+}
+
+
+
+.listItem {
+    cursor: pointer;
+    padding: 0.75rem !important;
+    border-radius: 0.5rem !important;
+    transition: all 0.25s linear;
+}
+
+.listItem:hover {
+    background-color: var(--app-bg-color);
+}
+
+
+.expiredDiscount {
+    color: var(--main-color-error);
+}
+
+
+.foodBtn {
+    cursor: pointer;
+}
+
+
+
+
+
+@media (min-width:600px) {
+    .filterWrapperFoods {
+        align-items: flex-end;
+
+    }
+}
+
+@media (min-width:900px) {
+    .filterWrapperFoods {
+        flex-direction: row;
+        align-items: center;
+
+    }
+}

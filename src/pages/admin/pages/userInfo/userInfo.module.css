@@ -1,0 +1,58 @@
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.allComponentsWrapper {
+    margin: 4rem 0;
+}
+
+.allComponents {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--section-bg-color);
+    gap: 2rem 0;
+    padding: 2rem 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 3rem;
+}
+
+.allComponents .flagBtn {
+    background-color: #4e6f91;
+
+}
+
+.allComponents .flagBtn:hover {
+    background-color: #3d5b78;
+}
+
+.allComponents .title {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+}
+
+.title p{
+    color: var(--main-color);
+}
+
+.commentsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-height: 0;
+    transition: all 0.25s ease-in-out;
+    overflow: hidden;
+}
+
+.showComment {
+    max-height: 300rem;
+}
+
+@media (min-width:1200px){
+    .wrapper {
+        width: 70%;
+    }
+    
+}

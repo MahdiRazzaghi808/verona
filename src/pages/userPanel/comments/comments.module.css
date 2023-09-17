@@ -1,0 +1,71 @@
+.comments {
+    height: fit-content;
+    width: 100%;
+    background-color: #222831;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    padding: 2rem;
+    color: #ffbe33;
+}
+
+
+.allComments {
+    margin-top: 4rem;
+}
+
+.allComments h3 {
+    color: #ff3333;
+}
+
+.allComments button {
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #4e6f91;
+    border-radius: 0.5rem !important;
+}
+
+.createComment {
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.commentsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-height: 0;
+    transition: max-height 0.5s ease-in-out;
+    overflow: hidden;
+}
+
+.showComment {
+    max-height: 300rem;
+}
+
+
+.div {
+    align-self: center;
+
+}
+
+
+.div span {
+    color: #fff !important;
+    font-size: 1.2rem;
+
+}
+
+.commentItem {
+    padding: 1.5rem;
+    border: 1px solid #4e6f91;
+    color: #fff;
+    border-radius: 0.5rem;
+
+}
