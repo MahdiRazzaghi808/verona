@@ -406,6 +406,8 @@ const it = {
     panelAdminLoginAlertText: 'Usa 000000000 per il numero di telefono e la password 123456 per accedere al pannello di amministrazione con ruolo di osservatore.',
     panelAlertAlarm: `Questo account utente è solo per la visualizzazione e l'accesso al pannello di amministrazione.Il tuo accesso è limitato al creatore del sito, con la differenza che la capacità di modifica, invio ed eliminazione è disabilitata per te.Se noti una modifica nel carrello della spesa, nei commenti, ecc.in questo account, è perché è pubblico.`,
     panelAlertAlarm2: 'Questo account è solo per la visualizzazione',
+    free: "gratuito"
+
 }
 
 export default it;

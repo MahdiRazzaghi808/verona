@@ -418,6 +418,7 @@ const en = {
     panelAdminLoginAlertText: 'Use 000000000 for phone number and password 123456 to enter the admin panel with observer role.',
     panelAlertAlarm: 'This user account is only for viewing and accessing the admin panel. Your access is limited to the creator of the site, with the difference that the ability to edit, send and delete is disabled for you. If you see a change in the shopping cart, comments, etc. in this account, it is because it is public.',
     panelAlertAlarm2: 'This account is for viewing only',
+    free: 'free',
 
 
 }

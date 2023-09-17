@@ -5,9 +5,10 @@ export const faMillionHandler = (price, lan) => {
         if (faNumber) {
             const remainder = price % 1000
 
-            return `${faNumber}میلیون و ${remainder} `
+            return `${faNumber}میلیون و ${remainder} هزار`
+        } else {
+            return `${price} هزار`
         }
-        return price
     }
     return price
 }

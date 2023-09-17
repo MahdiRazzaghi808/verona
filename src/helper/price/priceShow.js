@@ -4,27 +4,27 @@ import { faMillionHandler } from "../faMillionHandler/faMillionHandler"
 //////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////
 export const cartBaseP = (dollar, count, price, lan) => {
-    return `${faMillionHandler((price * count * dollar[lan]).toFixed(lan === 'fa' ? 0 : 2), lan)}${currency[lan]}`
+    return `${faMillionHandler((price * count * dollar[lan]).toFixed(lan === 'fa' ? 0 : 2), lan)} ${currency[lan]}`
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////
 export const cartP = (dollar, count, price, lan, offer) => {
 
-    return `${faMillionHandler(((count * price * (100 - offer) / 100) * dollar[lan]).toFixed(lan === 'fa' ? 0 : 2), lan)}${currency[lan]}`
+    return `${faMillionHandler(((count * price * (100 - offer) / 100) * dollar[lan]).toFixed(lan === 'fa' ? 0 : 2), lan)} ${currency[lan]}`
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////
 export const cartSidebar = (dollar, price, lan) => {
 
-    return `${faMillionHandler((+price * dollar[lan]).toFixed(lan === 'fa' ? 0 : 2), lan)}${currency[lan]}`
+    return `${faMillionHandler((+price * dollar[lan]).toFixed(lan === 'fa' ? 0 : 2), lan)} ${currency[lan]}`
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////
 export const orderSidebar = (dollar, itemShow, lan) => {
-    return `${itemShow === 0 ? (1 * dollar[lan]).toFixed(lan === 'fa' ? 0 : 2) : "0"}${currency[lan]}`
+    return `${faMillionHandler(itemShow === 0 ? (1 * dollar[lan]).toFixed(lan === 'fa' ? 0 : 2) : "0", lan)} ${currency[lan]}`
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////
@@ -32,7 +32,7 @@ export const orderSidebar = (dollar, itemShow, lan) => {
 export const orderSidebarFinal = (dollar, final, total, offer, itemShow, lan, type) => {
 
     return `${faMillionHandler((((+final * dollar[lan]) + ((itemShow === 0 && total < 50) ? +(1 * dollar[lan]).toFixed(lan === 'fa' ? 0 : 2) : 0)) * (100 - +offer) / 100).toFixed(lan === 'fa' ? 0 : 2), type === 'faT' ? 'en' : lan)
-        }${currency[lan]}`
+        } ${currency[lan]}`
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////////////
@@ -40,7 +40,7 @@ export const orderSidebarFinal = (dollar, final, total, offer, itemShow, lan, ty
 //////////////////////////////////////////////////////////////////////////////////////////////////
 export const foodsP = (dollar, price, lan, offer) => {
 
-    return `${faMillionHandler(((price * (100 - offer) / 100) * dollar[lan]).toFixed(lan === 'fa' ? 0 : 2), lan)}${currency[lan]}`
+    return `${faMillionHandler(((price * (100 - offer) / 100) * dollar[lan]).toFixed(lan === 'fa' ? 0 : 2), lan)} ${currency[lan]}`
 }
 
 

@@ -307,7 +307,7 @@ function OrderPage() {
 
                             <div>
                                 <p>{t("orderPageSidebarShippingCost")}</p>
-                                <p>{cart.summary.total < 50 ? orderSidebar(dollar, itemShow, i18n.language) : 'free'} </p>
+                                <p>{cart.summary.total < 50 ? orderSidebar(dollar, itemShow, i18n.language) : t('free')} </p>
                             </div>
 
                             <div>
