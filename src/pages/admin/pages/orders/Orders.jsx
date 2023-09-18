@@ -8,7 +8,7 @@ import { themeDetail } from '../../../../redux/itemStore/theme';
 // helper
 import { setTime } from '../../../../helper/setTime/setTime';
 // router
-import { Link, useOutletContext } from "react-router-dom";
+import {  useOutletContext } from "react-router-dom";
 // react icons
 import { FcCancel } from 'react-icons/fc';
 import { MdDoneAll } from 'react-icons/md';
@@ -154,7 +154,7 @@ function Orders({ type, token }) {
 
       render: (name, data) =>
         <div>
-          <Link to={`/pAdmin/user/${data.userId}`}>{name}</Link>
+          <span>{name}</span>
         </div>
     },
 
