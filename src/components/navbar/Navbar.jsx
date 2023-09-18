@@ -62,6 +62,15 @@ function Navbar() {
 
     const [open, setOpen] = useState(false);
     const auth = useSelector(authDetail);
+    const [selectOpen, setSelectOpen] = useState(false);
+
+    const toggleSelect = () => {
+        setSelectOpen((prevOpen) => !prevOpen);
+    };
+
+    const closeSelect = () => {
+        setSelectOpen(false);
+    };
 
     const clickHandler = () => {
         setOpen(!open)
@@ -80,7 +89,9 @@ function Navbar() {
         localStorage.setItem("language", value)
         i18n.changeLanguage(value);
         (i18n.language === "fa" || i18n.language === "ar") ? document.documentElement.dir = "rtl" : document.documentElement.dir = "ltr"
-
+        setTimeout(() => {
+            setSelectOpen(false);
+        }, 0)
     };
 
     const pAdminHandler = () => {
@@ -99,8 +110,11 @@ function Navbar() {
     }
 
 
-    
+
     const handleScroll = () => {
+        if (selectOpen) {
+            closeSelect();
+        }
         const scrollTop = window.scrollY;
 
         const navbar = document.querySelector('.navbarWrapper1');
@@ -130,10 +144,12 @@ function Navbar() {
 
     useEffect(() => {
         window.addEventListener('scroll', handleScroll);
+
         return () => {
             window.removeEventListener('scroll', handleScroll);
-        }
-    }, []);
+        };
+        
+    }, [selectOpen]);
 
 
     return (
@@ -177,9 +193,11 @@ function Navbar() {
 
 
                             <Select
-                            className='languageSelect'
+                                className='languageSelect'
                                 defaultValue={`${localStorage.getItem("language")}`}
                                 style={{ width: 80 }}
+                                open={selectOpen}
+                                onClick={toggleSelect}
                                 onChange={handleChange}
                                 options={[
                                     { value: 'en', label: 'En' },
