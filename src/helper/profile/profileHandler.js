@@ -1,16 +1,16 @@
 import Swal from 'sweetalert2';
 
 const imageDefaultUrl = [
-    'https://www.uplooder.net/img/image/2/708d65b910014554eadb73f3a52dc6eb/h1.svg',
-    'https://www.uplooder.net/img/image/63/926763375b7bec1b174c45395506b4b9/h3.svg',
-    'https://www.uplooder.net/img/image/4/18adf4bdc562abef6d787e49f8c0b3a4/h4.svg',
-    'https://www.uplooder.net/img/image/7/b36f3e673f5ef415a78d8ea4a8557e0d/h5.svg',
-    'https://www.uplooder.net/img/image/86/74bc3f5f471e64394eba215ded2f1c52/h6.svg',
-    'https://www.uplooder.net/img/image/12/60e4fd61250304d1e081f6d1dd1a85bb/h7.svg',
-    'https://www.uplooder.net/img/image/96/9c5b5254f0c8c5f4b733434f4c54f37c/h8.svg',
-    'https://www.uplooder.net/img/image/87/5c2c7ffd469908321127edf56c0c1980/h9.svg',
-    'https://www.uplooder.net/img/image/6/e54c5dae18d0ccd2e0e1826d9afde146/h10.svg',
-    'https://www.uplooder.net/img/image/29/6d0b93519b43c3ed1d03b63f9a0ce074/h11.svg'
+    'https://imgurl.ir/uploads/v692241_account-avatar-profile-user-15-svgrepo-com_1.png',
+    'https://s32.picofile.com/file/8482233018/account_avatar_profile_user_4_svgrepo_com_1_.png',
+    'https://s32.picofile.com/file/8482233026/account_avatar_profile_user_5_svgrepo_com_1_.png',
+    'https://s32.picofile.com/file/8482233034/account_avatar_profile_user_7_svgrepo_com_1_.png',
+    'https://s32.picofile.com/file/8482233042/account_avatar_profile_user_8_svgrepo_com_1_.png',
+    'https://s32.picofile.com/file/8482233050/account_avatar_profile_user_10_svgrepo_com_1_.png',
+    'https://s32.picofile.com/file/8482233068/account_avatar_profile_user_13_svgrepo_com_1_.png',
+    'https://s32.picofile.com/file/8482233084/account_avatar_profile_user_14_svgrepo_com_1_.png',
+    'https://s32.picofile.com/file/8482233092/account_avatar_profile_user_16_svgrepo_com_1_.png',
+    'https://s32.picofile.com/file/8482233100/account_avatar_profile_user_svgrepo_com_5_.png'
 ];
 
 export const profileClickHandler = async (t, setSelectedImageUrl, theme) => {
@@ -36,11 +36,12 @@ export const profileClickHandler = async (t, setSelectedImageUrl, theme) => {
     if (type === 'default') {
         const { isConfirmed, value } = await Swal.fire({
             title: t("userPanelSwalProfileSelectDefaultTitle"),
-            html: `<div style="display: flex; flex-wrap: wrap; gap: 10px;justify-content: center">
-        ${imageDefaultUrl.map((url, index) => {
-                return `<img src="${url}" alt="Image ${index}" style="max-width: 100px; max-height: 100px; cursor: pointer; border-radius: 50%;border: 5px solid transparent;" onclick="setImage(${index}, this);">`;
+            html: `<div style="display: flex; flex-wrap: wrap; gap: 10px; justify-content: center;">
+            ${imageDefaultUrl.map((url, index) => {
+              return `<img src="${url}" style="width: 100px; height: 100px; border: none; border-radius: 50%;" onclick="setImage(${index}, this);"></img>`;
             }).join('')}
-      </div>`,
+          </div>`
+          ,
             showCancelButton: true,
             confirmButtonText: t("userPanelSwalProfileSelectSubmitBtn"),
             cancelButtonText: t("cartSwalCancelBtn"),

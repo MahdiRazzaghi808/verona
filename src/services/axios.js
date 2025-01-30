@@ -1,5 +1,5 @@
 import axios from 'axios';
-const BASE_URL ='https://veronaapi.iran.liara.run';
+const BASE_URL = 'https://newapi-verona.liara.run';
 
 const apiRequests = axios.create({
     baseURL: BASE_URL,
@@ -20,8 +20,6 @@ export const fetchFrom = async (configObj) => {
         res = await apiRequests[method.toLowerCase()](url, {
             ...requestConfig,
         });
-
-
         if (res.status < 400) {
             inAxiosData.data = res.data;
         } else {
